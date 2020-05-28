@@ -17,6 +17,11 @@ function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme'));
   const { width } = useWindowDimensions();
 
+  useEffect(() => {
+    const fetchedTheme = localStorage.getItem('theme');
+    if (!fetchedTheme) return localStorage.setItem('theme', 'dark');
+  }, [])
+
   const themeToggler = () => {
     if (theme === 'light') {
       setTheme('dark');
