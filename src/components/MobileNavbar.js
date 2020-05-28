@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import ThemeToggler from './ThemeToggler';
 import './MobileNavbar.css';
 
 export default function MobileNavbar({ theme, themeToggler }) {
@@ -50,7 +49,10 @@ const MobileMenu = ({ theme, themeToggler, closeMenu }) => {
         <li className='nav-item-mobile'>
           <Link onClick={closeMenu} to='about'>About</Link>
         </li>
-        <ThemeToggler theme={theme} themeToggler={themeToggler} />
+        <li className='nav-item-mobile'>
+          {(theme === 'dark' || !theme) && <a onClick={themeToggler}>🌙</a>}
+          {(theme === 'light') && <a onClick={themeToggler}>🌞</a>}
+        </li>
       </ul>
     </div>
   )
