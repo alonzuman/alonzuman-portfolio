@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./components/GlobalStyles";
 import { lightTheme, darkTheme } from "./components/Themes"
@@ -7,7 +7,6 @@ import Navbar from './components/Navbar';
 import MobileNavbar from './components/MobileNavbar';
 import Home from './pages/Home';
 import About from './pages/About';
-import Work from './pages/Work';
 import Admin from './pages/Admin';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';

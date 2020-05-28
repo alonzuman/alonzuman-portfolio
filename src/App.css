@@ -27,9 +27,14 @@ li {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h3, h4, h5 {
   font-family: 'Raleway', sans-serif!important;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif!important;
+  margin-bottom: 0rem;
 }
 
 p {
@@ -49,6 +54,10 @@ button:focus {
   outline: none;
 }
 
+#hero-button {
+  margin: 0;
+}
+
 .primary-button {
   background-color: transparent;
   color: var(--primary);
@@ -58,6 +67,7 @@ button:focus {
   font-size: 1rem;
   border-radius: 2rem;
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
   max-height: 2.5rem;
 }
 
