@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Thumb from '../components/Thumb';
 import ProjectCard from '../components/ProjectCard';
 import { works } from '../data';
 import './Work.css';
@@ -22,7 +23,7 @@ export default function Work() {
     <div>
       {cardOpen && <ProjectCard closeCard={closeCard} selectedWork={selectedWork} />}
       <ul className='work-grid'>
-        {works.map(work => <li className='work-thumb' key={work.id} onClick={() => openCard(work)}>{work.title}</li>)}
+        {works.map(work => <li key={work.id} onClick={() => openCard(work)}><Thumb work={work} /></li>)}
       </ul>
     </div>
   )

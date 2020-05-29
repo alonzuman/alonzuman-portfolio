@@ -8,7 +8,7 @@ export default function WorkAndProjects() {
     <div>
       <div className='flex-header'>
         <h1>View My:
-        <button
+          <button
             className={`primary-button ${isWork ? 'selected-button' : ''}`}
             onClick={() => { setIsWork(true) }}>
             Work
@@ -16,7 +16,7 @@ export default function WorkAndProjects() {
           <button
             className={`primary-button ${!isWork ? 'selected-button' : ''}`}
             onClick={() => setIsWork(false)}>
-            Fun Projects
+            Projects
       </button>
         </h1>
       </div>

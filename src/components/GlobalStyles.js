@@ -14,13 +14,13 @@ export const GlobalStyles = createGlobalStyle`
   
   .mobile-navbar {
     background: ${({ theme }) => theme.body};
-    transition: all 0.50s linear;
+    transition: all 0.50s ease-in-out;
   }
   
   .mobile-navbar a {
     color: ${({ theme }) => theme.text};
     text-decoration: none;
-    transition: all 0.50s linear;
+    transition: all 0.50s ease-in-out;
   }
   
   .nav-item:hover {
@@ -29,8 +29,14 @@ export const GlobalStyles = createGlobalStyle`
     transition: border-bottom 0.3sec ease-in-out;
   }
   
+  .navlink-active {
+    border-bottom: 2px solid  ${({ theme }) => theme.text};
+    cursor: pointer;
+    transition: border-bottom 0.3sec ease-in-out;
+  }
+  
   .mobile-menu {
-    background: ${({ theme }) => theme.body};
+    background-color: ${({ theme }) => theme.body};
   }
   
   .mobile-menu a {
@@ -74,5 +80,10 @@ export const GlobalStyles = createGlobalStyle`
 
   .close-button:focus {
     outline: none;
+  }
+
+  input {
+    border-bottom: 1px solid ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.text};
   }
   `

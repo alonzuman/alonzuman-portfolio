@@ -24,6 +24,14 @@
   padding: 0.5rem 1rem 1rem 1rem;
 }
 
-.toggler {
-  padding-top: 0;
+.toggler:hover {
+  border-bottom: none!important;
+}
+
+#navbar-button {
+  color: var(--primary);
+}
+
+#navbar-button:hover {
+  color: white
 }

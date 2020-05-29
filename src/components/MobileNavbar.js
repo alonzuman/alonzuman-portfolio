@@ -27,6 +27,8 @@ export default function MobileNavbar({ theme, themeToggler }) {
             </Link>
           </li>
           <li className='nav-group'>
+            {(theme === 'dark' || !theme) && <a className='theme-toggler-mobile' onClick={themeToggler}>🌙</a>}
+            {(theme === 'light') && <a className='theme-toggler-mobile' onClick={themeToggler}>🌞</a>}
             <div onClick={openMenu} >
               <i className="fas fa-bars"></i>
             </div>
@@ -38,20 +40,27 @@ export default function MobileNavbar({ theme, themeToggler }) {
   )
 }
 
-const MobileMenu = ({ theme, themeToggler, closeMenu }) => {
+const MobileMenu = ({ closeMenu }) => {
   return (
     <div className='mobile-menu'>
       <button className='close-button' onClick={closeMenu}>Close</button>
       <ul>
         <li className='nav-item-mobile'>
-          <Link onClick={closeMenu} to='/work-and-projects'>Work & Projects</Link>
+          <Link onClick={closeMenu} to='/'>Home</Link>
         </li>
         <li className='nav-item-mobile'>
           <Link onClick={closeMenu} to='about'>About</Link>
         </li>
-        <li className='nav-item-mobile'>
-          {(theme === 'dark' || !theme) && <a onClick={themeToggler}>🌙</a>}
-          {(theme === 'light') && <a onClick={themeToggler}>🌞</a>}
+        <li className='social-group'>
+          <a href='http://www.github.com/alonzuman' target='_blank' >
+            <i className="social-icon fab fa-github" />
+          </a>
+          <a href='http://www.facebook.com/alonzuman' target='_blank' >
+            <i className="social-icon fab fa-facebook" />
+          </a>
+          <a href='mailto:alonzuman7@gmail.com' >
+            <i className="social-icon fas fa-envelope"></i>
+          </a>
         </li>
       </ul>
     </div>

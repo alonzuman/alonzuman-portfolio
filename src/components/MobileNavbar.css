@@ -32,3 +32,13 @@
 .nav-item-mobile {
   margin: 4rem 4rem;
 }
+
+.theme-toggler-mobile {
+  font-size: 1.3rem;
+  margin-right: 1.3rem;
+}
+
+.social-icon {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+}

@@ -8,9 +8,10 @@ import MobileNavbar from './components/MobileNavbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Admin from './pages/Admin';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Redirect, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import WorkAndProjects from './pages/WorkAndProjects';
+import Login from './pages/Login';
 
 
 function App() {
@@ -43,8 +44,10 @@ function App() {
             <div className='container'>
               <Route exact path='/' component={Home} />
               <Route path='/about' component={About} />
-              <Route path='/work-and-projects' component={WorkAndProjects} />
+              <Route path='/admin'>
+              </Route>
               <Route path='/admin' component={Admin} />
+              <Route path='/login' component={Login} />
             </div>
           </Switch>
         </Router>
