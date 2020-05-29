@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Work from './Work';
-import { projects, works } from '../data';
+import { projects, works } from '../data/data';
 
 export default function WorkAndProjects() {
   const [isWork, setIsWork] = useState(true)
