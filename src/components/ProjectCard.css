@@ -1,5 +1,5 @@
 .project-card-background {
-  position: absolute;
+  position: fixed;
   padding: 4rem;
   background-color: #000000de;
   top: 0;

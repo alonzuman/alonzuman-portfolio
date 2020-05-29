@@ -12,7 +12,7 @@
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   padding: 2rem;
   top: 0;
   right: 0;
