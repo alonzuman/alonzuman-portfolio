@@ -16,6 +16,10 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.project-card h1 {
+  margin-bottom: 1rem;
+}
+
 .project-card .close-button {
   color: white;
 }

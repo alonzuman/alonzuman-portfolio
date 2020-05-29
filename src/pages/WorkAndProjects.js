@@ -7,7 +7,7 @@ export default function WorkAndProjects() {
   return (
     <div>
       <div className='flex-header'>
-        <h1>View My:
+        <h1 className='slow-fade'>View My:
           <button
             className={`primary-button ${isWork ? 'selected-button' : ''}`}
             onClick={() => { setIsWork(true) }}>
