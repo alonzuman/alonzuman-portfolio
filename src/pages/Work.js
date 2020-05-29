@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import Thumb from '../components/Thumb';
 import ProjectCard from '../components/ProjectCard';
-import { works } from '../data';
 import './Work.css';
 
-export default function Work() {
+export default function Work({ works }) {
   const [cardOpen, setCardOpen] = useState(false);
   const [selectedWork, setSelectedWork] = useState()
 

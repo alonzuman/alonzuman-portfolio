@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Work from './Work';
-import Projects from './Projects';
+import { projects, works } from '../data';
 
 export default function WorkAndProjects() {
   const [isWork, setIsWork] = useState(true)
@@ -20,8 +20,8 @@ export default function WorkAndProjects() {
       </button>
         </h1>
       </div>
-      {!isWork && <Projects />}
-      {isWork && <Work />}
+      {!isWork && <Work works={projects} />}
+      {isWork && <Work works={works} />}
     </div>
   )
 }

@@ -26,3 +26,14 @@
   width: 100%;
   object-fit: cover;
 }
+
+@media only screen and (max-width: 760px) {
+  .thumb-content {
+    padding-top: 4.5rem;
+    font-size: 1rem;
+  }
+
+  .thumb-content h2 {
+    font-size: 1.3rem;
+  }
+}
