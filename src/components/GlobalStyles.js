@@ -82,6 +82,13 @@ export const GlobalStyles = createGlobalStyle`
     outline: none;
   }
 
+  .repository-link {
+    color: ${({ theme }) => theme.text};
+    font-size: 2rem!important;
+    margin: 0 0 1rem 0;
+    margin-left: 0.5rem;
+  }
+
   input {
     border-bottom: 1px solid ${({ theme }) => theme.text};
     color: ${({ theme }) => theme.text};

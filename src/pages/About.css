@@ -18,4 +18,8 @@
   .about-grid {
     grid-template-columns: 1fr;
   }
+
+  .about-photo {
+    min-height: 300px;
+  }
 }

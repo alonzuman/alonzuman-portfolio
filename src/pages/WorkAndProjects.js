@@ -3,21 +3,21 @@ import Work from './Work';
 import { projects, works } from '../data/data';
 
 export default function WorkAndProjects() {
-  const [isWork, setIsWork] = useState(true)
+  const [isWork, setIsWork] = useState(false)
   return (
     <div>
       <div className='flex-header'>
         <h1 className='slow-fade'>View My:
           <button
-            className={`primary-button ${isWork ? 'selected-button' : ''}`}
-            onClick={() => { setIsWork(true) }}>
-            Work
-      </button>
-          <button
             className={`primary-button ${!isWork ? 'selected-button' : ''}`}
             onClick={() => setIsWork(false)}>
             Projects
-      </button>
+        </button>
+          <button
+            className={`primary-button ${isWork ? 'selected-button' : ''}`}
+            onClick={() => { setIsWork(true) }}>
+            Work
+        </button>
         </h1>
       </div>
       {!isWork && <Work works={projects} />}
