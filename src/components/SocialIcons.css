@@ -11,3 +11,15 @@
   padding: 2rem 0;
   color: var(--primary);
 }
+
+
+@media only screen and (max-width: 760px) {
+  .social-icons {
+    display: none;
+  }
+
+  .social-icons-mobile {
+    display: flex;
+    justify-content: space-around;
+  }
+}

@@ -11,6 +11,8 @@ export default function ToggleSwitch({ themeToggler }) {
 
   return (
     <div className={`switch ${isClicked ? 'background' : ''}`}>
+      <i className="fas fa-sun"></i>
+      <i className="fas fa-moon"></i>
       <span onClick={toggle} className={`slider ${(isClicked ? 'clicked' : '')}`}></span>
     </div>
   )

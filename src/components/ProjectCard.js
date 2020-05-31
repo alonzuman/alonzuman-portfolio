@@ -15,13 +15,10 @@ export default function ProjectCard({ project }) {
 
   return (
     <li className='card-container' style={(project.id % 2 === 0 ? right : left)}>
-      <h3>Featured</h3>
-      <h1>
-        {project.title}
-      </h1>
       <div className='description-and-photo'>
         <img src={sample} className='project-photo' alt={project.title} />
         <div className='project-description' style={{ textAlign: 'left', direction: 'ltr' }}>
+          <h3>Featured</h3><h1>{project.title}</h1>
           {project.description}
           <div className='tech-stack'>
             {project.stack.map(x => <span key={x} className='monospace'> {x} </span>)}

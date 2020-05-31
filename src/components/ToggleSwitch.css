@@ -21,3 +21,13 @@
   margin-left: 1.5rem;
   transition: all 0.3s ease-in-out;
 }
+
+.fa-moon, .fa-sun {
+  margin-left: 0.4rem;
+  position: absolute;
+  margin-top: 0.3rem;
+}
+
+.fa-moon {
+  margin-left: 1.7rem;
+}

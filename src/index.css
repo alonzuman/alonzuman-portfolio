@@ -69,6 +69,10 @@ footer {
   text-align: center;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 button a {
   text-decoration: none;
 }
@@ -77,8 +81,20 @@ button a {
   min-height: 70vh;
 }
 
+.bottom-email {
+  display: none;
+}
+
 @media only screen and (max-width: 760px) {
   .container {
     padding: 0 1rem;
+  }
+
+  .email {
+    display: none;
+  }
+
+  .bottom-email {
+    display: block;
   }
 }

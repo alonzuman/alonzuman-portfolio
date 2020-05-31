@@ -1,0 +1,41 @@
+.mobile-navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.mobile-menu-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-top: 0;
+}
+
+.mobile-menu {
+  max-width: 300px;
+  margin: 8rem auto;
+  text-align: center;
+}
+
+.mobile-menu li {
+  margin-top: 3rem;
+}
+
+.exit-button {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon, .exit-button {
+  transition: all 0.3s ease-in-out;
+  font-size: 1.8rem;
+  margin-top: 0.3rem;
+}

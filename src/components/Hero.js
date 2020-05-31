@@ -4,9 +4,8 @@ import './Hero.css';
 export default function Hero() {
   return (
     <div className='hero-container'>
-      <h3>Hi, my name is</h3>
-      <h1>Alon Zuman,<br></br> and I'm a web developer.</h1>
-      <p>I am a web developer based in Tel Aviv, IL that specializes in building (and quite often designing) websites, ecommerce stores, applications and anything in between.</p>
+      <h3>Hello! 👋</h3>
+      <h1>I'm <b>Alon Zuman</b>,<br></br> a design-minded full-stack developer passionate about building beautiful experiences.</h1>
       <a href='mailto:alonzuman7@gmail.com'>
         <button className='primary-button' >Contact Me</button>
       </a>

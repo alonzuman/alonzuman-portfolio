@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
+import MobileNavbar from './components/MobileNavbar';
+import useWindowDimensions from './components/useWindowDimensions';
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./components/GlobalStyles";
 import { lightTheme, darkTheme } from "./components/Themes"
@@ -13,9 +15,9 @@ import Contact from './components/Contact';
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme'));
+  const { width } = useWindowDimensions();
 
   const themeToggler = () => {
-    // theme === 'light' ? setTheme('dark') : setTheme('light')
     if (theme === 'light') {
       setTheme('dark')
       localStorage.setItem('theme', 'dark')
@@ -27,12 +29,14 @@ function App() {
 
   useEffect(() => {
     localStorage.getItem('theme') ? setTheme(theme) : localStorage.setItem('theme', 'dark');
-  }, [])
+  }, []);
+
+
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <>
         <GlobalStyles />
-        <Navbar themeToggler={themeToggler} />
+        {width > 760 ? <Navbar themeToggler={themeToggler} /> : <MobileNavbar themeToggler={themeToggler} />}
         <SocialIcons />
         <Email />
         <div className="container">
@@ -60,6 +64,29 @@ function App() {
             <Contact />
           </section>
           <footer>
+            <ul className='social-icons-mobile'>
+              <li className='social-icon'>
+                <a href='https://github.com/alonzuman' rel="noopener noreferrer" target='_blank'>
+                  <i className="fab fa-github" />
+                </a>
+              </li>
+              <li className='social-icon'>
+                <a href='https://facebook.com/alonzuman' rel="noopener noreferrer" target='_blank'>
+                  <i className="fab fa-facebook-f" />
+                </a>
+              </li>
+              <li className='social-icon'>
+                <a href='https://www.linkedin.com/in/alon-zuman-018365193/' rel="noopener noreferrer" target='_blank'>
+                  <i className="fab fa-linkedin-in" />
+                </a>
+              </li>
+              <li className='social-icon'>
+                <a href='https://instagram.com/alonzuman' rel="noopener noreferrer" target='_blank'>
+                  <i className="fab fa-instagram" />
+                </a>
+              </li>
+            </ul>
+            <a className='bottom-email' href='mailto:alonzuman7@gmail.com'><div className='monospace'>alonzuman7@gmail.com</div></a>
             <span className='monospace'>Designed & Built by Alon Zuman</span>
           </footer>
           <br></br>

@@ -61,6 +61,10 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
   }
   
+  .nav-item:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+
   .email-address {
     color: ${({ theme }) => theme.text}!important;
     font-size: 1.4rem;
@@ -87,5 +91,22 @@ export const GlobalStyles = createGlobalStyle`
     background-color: #a24d69;
     width: 300px;
     height: 300px;
+  }
+
+  .fa-moon:hover {
+    color: ${({ theme }) => theme.text};
+  }
+  
+  .fa-sun:hover {
+    color: ${({ theme }) => theme.text};
+  }
+
+  .mobile-menu-container {
+    background-color: ${({ theme }) => theme.body};
+  }
+  
+  .mobile-navbar {
+    background-color: ${({ theme }) => theme.body};
+    transition: all 0.5s ease-in-out
   }
   ` 
