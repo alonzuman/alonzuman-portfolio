@@ -1,3 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --shadow: 0px 1px 10px #00000033;
+  --background: white;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +16,69 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 1rem;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospac
+}
+
+button {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.primary-button {
+  padding: 0.6rem 1rem;
+  background: transparent;
+  border-radius: 0.2rem;
+}
+
+.container {
+  margin: 6rem 8rem 2rem 8rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+section {
+  width: 100%;
+  min-height: 90vh;
+}
+
+#hero {
+  margin-top: 3rem;
+}
+
+.custom-anchor {
+  margin-bottom: 6rem;
+  opacity: 0;
+  display: hidden;
+}
+
+footer {
+  text-align: center;
+}
+
+button a {
+  text-decoration: none;
+}
+
+#contact-section {
+  min-height: 70vh;
+}
+
+@media only screen and (max-width: 760px) {
+  .container {
+    padding: 0 1rem;
+  }
 }

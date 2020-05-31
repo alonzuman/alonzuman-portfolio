@@ -1,39 +1,37 @@
-.project-card-background {
-  position: fixed;
-  padding: 4rem;
-  background-color: #000000de;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+.card-container {
+  margin-bottom: 10rem;
+}
+
+.card-container .fas,
+.card-container .fab {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.project-description {
+  box-shadow: var(--shadow);
+  padding: 1rem 1.5rem;
+  margin: 1rem -2rem 1rem -2rem;
   z-index: 99;
-}
-
-.project-card {
-  background-color: white;
+  background: var(--background);
   position: relative;
-  display:grid;
-  grid-template-columns: 1fr 1fr;
 }
 
-.project-card h1 {
-  margin-bottom: 1rem;
+.project-photo {
+  min-width: 300px;
 }
 
-.project-card .close-button {
-  color: white;
+.description-and-photo {
+  display: flex;
+  justify-content: space-between;
 }
 
-.close-button:focus {
-  outline: none;
+.tech-stack {
+  position: absolute;
+  bottom: 3rem;
 }
 
-@media only screen and (max-width: 760px) {
-  .project-card-background {
-    padding: 1rem;
-  }
-
-  .project-card {
-    grid-template-columns: 1fr;
-  }
+.project-links {
+  position: absolute;
+  bottom: 1rem;
 }

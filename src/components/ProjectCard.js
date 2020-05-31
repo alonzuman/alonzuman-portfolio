@@ -1,33 +1,42 @@
 import React from 'react';
-import './ProjectCard.css'
+import './ProjectCard.css';
+import sample from '../content/sample.jpg';
 
-export default function ProjectCard({ selectedWork, closeCard }) {
+export default function ProjectCard({ project }) {
+  const right = {
+    direction: 'rtl',
+    textAlign: 'left'
+  }
 
-  const techStyle = {
-    margin: '0.2rem'
+  const left = {
+    direction: 'ltr',
+    textAlign: 'right'
   }
 
   return (
-    <div className='project-card-background'>
-      <div className='project-card'>
-        <a id='card-close-button' className='close-button' onClick={closeCard}>Close</a>
-        <img className='work-photo' src={selectedWork.image} alt="hi" />
-        <div className='work-content'>
-          <h1>{selectedWork.title}</h1>
-          <p>{selectedWork.description}</p>
-          <h3>Tech used:</h3>
-          <p>{selectedWork.techUsed.map(tech => <button key={tech} style={techStyle} className='primary-button'>{tech}</button>)}</p>
-          <h3>My role:</h3>
-          <p>{selectedWork.myRole}</p>
-          {selectedWork.repository && <><h3>Repo:</h3>
-            <a href={selectedWork.repository} target='_blank' >
-              <i className="fab fa-github repository-link" />
-            </a></>}
-          <h3>Website:</h3>
-          <a href={selectedWork.link} target='_blank'>
-            <button className='primary-button'>View</button></a>
+    <li className='card-container' style={(project.id % 2 === 0 ? right : left)}>
+      <h3>Featured</h3>
+      <h1>
+        {project.title}
+      </h1>
+      <div className='description-and-photo'>
+        <img src={sample} className='project-photo' alt={project.title} />
+        <div className='project-description' style={{ textAlign: 'left', direction: 'ltr' }}>
+          {project.description}
+          <div className='tech-stack'>
+            {project.stack.map(x => <span key={x} className='monospace'> {x} </span>)}
+          </div>
+          <div className='project-links'>
+            {project.repo && <a href={project.repo} rel="noopener noreferrer" target='_blank'>
+              <i className="fab fa-github" />
+            </a>}
+            <a href={project.link} rel="noopener noreferrer" target='_blank'>
+              <i className="fas fa-external-link-alt" />
+            </a>
+          </div>
         </div>
+
       </div>
-    </div>
+    </li>
   )
 }

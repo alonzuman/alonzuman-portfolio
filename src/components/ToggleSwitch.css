@@ -1,0 +1,23 @@
+.switch {
+  border-radius: 1rem;
+  height: 1.5rem;
+  width: 3rem;
+  position: relative;
+  margin-top: 0.5rem;
+  /* border: var(--primary); */
+  background-color: #ffa7c4;
+}
+
+.slider {
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.clicked {
+  margin-left: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}

@@ -1,56 +1,69 @@
 import React, { useState, useEffect } from 'react';
+import Navbar from './components/Navbar';
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./components/GlobalStyles";
 import { lightTheme, darkTheme } from "./components/Themes"
-import useWindowDimensions from './useWindowDimensionsHook';
-import Navbar from './components/Navbar';
-import MobileNavbar from './components/MobileNavbar';
-import Home from './pages/Home';
-import About from './pages/About';
-import Admin from './pages/Admin';
-import { Redirect, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './App.css';
-import WorkAndProjects from './pages/WorkAndProjects';
-import Login from './pages/Login';
-
+import SocialIcons from './components/SocialIcons';
+import Email from './components/Email';
+import Hero from './components/Hero';
+import About from './components/About';
+import MyProjects from './components/MyProjects';
+import MyWork from './components/MyWork';
+import Contact from './components/Contact';
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme'));
-  const { width } = useWindowDimensions();
-
-  useEffect(() => {
-    const fetchedTheme = localStorage.getItem('theme');
-    if (!fetchedTheme) return localStorage.setItem('theme', 'dark');
-  }, [])
 
   const themeToggler = () => {
+    // theme === 'light' ? setTheme('dark') : setTheme('light')
     if (theme === 'light') {
-      setTheme('dark');
-      localStorage.setItem('theme', 'dark');
+      setTheme('dark')
+      localStorage.setItem('theme', 'dark')
     } else {
       setTheme('light')
-      localStorage.setItem('theme', 'light');
+      localStorage.setItem('theme', 'light')
     }
   }
 
+  useEffect(() => {
+    localStorage.getItem('theme') ? setTheme(theme) : localStorage.setItem('theme', 'dark');
+  }, [])
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <>
         <GlobalStyles />
-        <Router>
-          {width > 760 && <Navbar theme={theme} themeToggler={themeToggler} />}
-          {width < 760 && <MobileNavbar theme={theme} themeToggler={themeToggler} />}
-          <Switch>
-            <div className='container'>
-              <Route exact path='/' component={Home} />
-              <Route path='/about' component={About} />
-              <Route path='/admin'>
-              </Route>
-              <Route path='/admin' component={Admin} />
-              <Route path='/login' component={Login} />
-            </div>
-          </Switch>
-        </Router>
+        <Navbar themeToggler={themeToggler} />
+        <SocialIcons />
+        <Email />
+        <div className="container">
+          <section id='hero'>
+            <Hero />
+          </section>
+          <section>
+            <div className='custom-anchor' id='about'>.</div>
+            <h1><span className='monospace'>01.</span>About Me</h1>
+            <About />
+          </section>
+          <section >
+            <div className='custom-anchor' id='experience'>.</div>
+            <h1><span className='monospace'>02.</span>My Projects</h1>
+            <MyProjects />
+          </section>
+          <section >
+            <div className='custom-anchor' id='work'>.</div>
+            <h1><span className='monospace'>03.</span>Where I've Worked</h1>
+            <MyWork />
+          </section>
+          <section id='contact-section'>
+            <div className='custom-anchor' id='contact'>.</div>
+            <h1><span className='monospace'>04. Now What?</span><br></br></h1>
+            <Contact />
+          </section>
+          <footer>
+            <span className='monospace'>Designed & Built by Alon Zuman</span>
+          </footer>
+          <br></br>
+        </div>
       </>
     </ThemeProvider>
   );

@@ -1,0 +1,13 @@
+.social-icons {
+  position: fixed;
+  bottom: 3rem;
+  left: 2rem;
+  z-index: 99;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--primary);
+}

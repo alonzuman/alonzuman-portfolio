@@ -3,94 +3,89 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    font-family: Tahoma, Helvetica, Arial, Roboto, sans-serif;
-    transition: background 0.5s ease-in-out;
-  }
-  
-  .navbar {
-    background: ${({ theme }) => theme.body};
     transition: all 0.50s ease-in-out;
   }
   
-  .mobile-navbar {
+  .project-description, .navbar {
     background: ${({ theme }) => theme.body};
-    transition: all 0.50s ease-in-out;
-  }
-  
-  .mobile-navbar a {
     color: ${({ theme }) => theme.text};
-    text-decoration: none;
     transition: all 0.50s ease-in-out;
   }
-  
-  .nav-item:hover {
-    border-bottom: 2px solid  ${({ theme }) => theme.text};
-    cursor: pointer;
-    transition: border-bottom 0.3sec ease-in-out;
+
+  .primary-button {
+    border: 1px solid ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.primary};
   }
   
-  .navlink-active {
-    border-bottom: 2px solid  ${({ theme }) => theme.text};
-    cursor: pointer;
-    transition: border-bottom 0.3sec ease-in-out;
+  .primary-button:hover {
+    background-color: ${({ theme }) => theme.primary};
+    color: white;
+    transition: all 0.5s ease-in-out;
   }
   
-  .mobile-menu {
+  h3 {
+    color: ${({ theme }) => theme.primary};
+  }
+  
+  .fas, .fab, .fa {
+    color: ${({ theme }) => theme.text};
+  }
+  
+  .fas:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+  
+  .fab:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+  
+  .slider {
     background-color: ${({ theme }) => theme.body};
+    box-shadow: 0px 0px 2px black;
   }
   
-  .mobile-menu a {
-    color: ${({ theme }) => theme.text};
+  .slider:hover {
+    box-shadow: 0px 0px 10px ${({ theme }) => theme.primary};
   }
   
-  .mobile-menu button {
-    color: ${({ theme }) => theme.text};
+  .slider:focus {
+    box-shadow: 0px 0px 10px ${({ theme }) => theme.primary};
   }
   
-  .navbar a {
-    color: ${({ theme }) => theme.text};
+  .background {
+    background-color: ${({ theme }) => theme.primary};
   }
   
-  .project-card {
-    background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text};
+  a {
+    color: ${({ theme }) => theme.primary};
+    text-decoration: none;
   }
   
-  .close-button {
-    border: none;
-    color: ${({ theme }) => theme.text};
-    background-color: transparent;
-    position: absolute;
-    left: 2rem;
-    top: 2rem;
-    transition: text-shadow 0.5s ease-in-out;
+  .email-address {
+    color: ${({ theme }) => theme.text}!important;
+    font-size: 1.4rem;
+  }
+  
+  .email-address:hover {
+    color: ${({ theme }) => theme.primary}!important;
+  }
+  
+  .monospace {
+    color: ${({ theme }) => theme.primary};
+  }
+  
+  .about-photo {
+    opacity: 0.8;
   }
 
-  #card-close-button {
-    text-shadow: 0px 1px 5px black;
-  }
-  
-  #card-close-button:hover {
-    text-shadow: 0px 1px 10px black;
+  .about-photo:hover {
+    object-fit: cover;
+    opacity: 1;
   }
 
-  .close-button:hover {
-    transition: text-shadow 0.5s ease-in-out;
+  .about-photo-background {
+    background-color: #a24d69;
+    width: 300px;
+    height: 300px;
   }
-
-  .close-button:focus {
-    outline: none;
-  }
-
-  .repository-link {
-    color: ${({ theme }) => theme.text};
-    font-size: 2rem!important;
-    margin: 0 0 1rem 0;
-    margin-left: 0.5rem;
-  }
-
-  input {
-    border-bottom: 1px solid ${({ theme }) => theme.text};
-    color: ${({ theme }) => theme.text};
-  }
-  `
+  ` 

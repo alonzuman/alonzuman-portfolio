@@ -1,23 +1,41 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import ToggleSwitch from './ToggleSwitch';
 import './Navbar.css';
-import { NavLink } from 'react-router-dom';
 
-export default function Navbar({ themeToggler, theme }) {
+export default function Navbar({ themeToggler }) {
+  const [shadow, setShadow] = useState('')
+
+  const style = {
+    boxShadow: shadow,
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      let newPos = window.pageYOffset;
+      newPos < 15 ? setShadow('') : setShadow('1px 1px 10px #00000033');
+    })
+  }, [])
+
   return (
-    <ul className='navbar'>
-      <li className='nav-group'>
-        <NavLink to='/'>
-          <h2>Alon Zuman</h2>
-        </NavLink>
-
-      </li>
-      <li className='nav-group'>
-        {(theme === 'dark' || !theme) && <a className='nav-item toggler' onClick={themeToggler}>🌙</a>}
-        {(theme === 'light') && <a className='nav-item toggler' onClick={themeToggler}>🌞</a>}
-        <NavLink id='/work-and-projects' className='nav-item' to='/'>Home</NavLink>
-        <NavLink id='/about' className='nav-item' to='/about'>About</NavLink>
-        <a id='navbar-button' href='mailto:alonzuman7@gmail.com' className='primary-button'>Contact Me</a>
-      </li>
-    </ul>
+    <div className='navbar' style={style}>
+      <ul className='menu'>
+        <ToggleSwitch themeToggler={themeToggler} />
+        <li className='nav-item'>
+          <a href='#about'><span className='monospace'>01.</span>About</a>
+        </li>
+        <li className='nav-item'>
+          <a href='#experience'><span className='monospace'>02.</span>Experience</a>
+        </li>
+        <li className='nav-item'>
+          <a href='#work'><span className='monospace'>03.</span>Work</a>
+        </li>
+        <li className='nav-item'>
+          <a href='#contact'><span className='monospace'>04.</span>Contact</a>
+        </li>
+        <li>
+          <a href='#hi'><button className='primary-button'>Resume</button></a>
+        </li>
+      </ul>
+    </div>
   )
 }

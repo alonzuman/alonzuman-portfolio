@@ -2,36 +2,29 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 1rem 4rem;
+  /* box-shadow: var(--shadow); */
+  z-index: 999;
+}
+
+.menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
-.navbar h1 {
-  margin-bottom: 0;
-}
-
-.navbar a {
+.menu a {
   text-decoration: none;
+  color: var(--text);
 }
 
-.nav-group {
-  display: flex;
-  justify-content: space-around;
+.navbar ul {
+  margin: 0;
+  padding: 1rem;
 }
 
 .nav-item {
-  padding: 0.5rem 1rem 1rem 1rem;
+  padding-top: 0.6rem;
 }
 
-.toggler:hover {
-  border-bottom: none!important;
-}
-
-#navbar-button {
-  color: var(--primary);
-}
-
-#navbar-button:hover {
-  color: white
+.menu button {
+  margin: 0;
 }

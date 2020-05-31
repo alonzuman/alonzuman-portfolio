@@ -1,0 +1,10 @@
+.email {
+  writing-mode: vertical-rl;
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+}
+
+.email-address {
+  margin: 3rem;
+}

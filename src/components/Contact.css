@@ -1,0 +1,11 @@
+.contact-container {
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 3rem;
+}
+
+.contact-container button {
+  margin-top: 3rem;
+}
