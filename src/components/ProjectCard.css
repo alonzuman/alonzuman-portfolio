@@ -36,16 +36,20 @@
   position: absolute;
   bottom: 1rem;
 }
-
-@media only screen and (max-width: 760px) {
-  .card-container {
-    padding: 1rem;
-    position: relative;
-    min-height: 400px;
-    margin-bottom: 4rem;
-  }
-
-  .project-description {
+  
+  @media only screen and (max-width: 760px) {
+    .card-container {
+      padding: 1rem;
+      position: relative;
+      min-height: 400px;
+      margin-bottom: 4rem;
+    }
+    
+    .tech-stack {
+      position: absolute;
+      bottom: 4rem;
+    }
+    .project-description {
     position: absolute;
     width: 100%;
     top: 0;
@@ -54,6 +58,10 @@
     left: 0;
     opacity: 0.7;
     margin: 0;
+  }
+
+  .project-description:hover {
+    opacity: 1;
   }
 
   .project-photo {

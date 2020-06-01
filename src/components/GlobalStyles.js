@@ -109,4 +109,18 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.body};
     transition: all 0.5s ease-in-out
   }
+  
+  .work-tab {
+    background-color: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
+    transition: all 0.5s ease-in-out;
+    border: none;
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    border-bottom: 2px solid ${({ theme }) => theme.text};
+  }
+  
+  .selected-tab {
+    border-bottom: 2px solid ${({ theme }) => theme.primary};
+  }
   ` 

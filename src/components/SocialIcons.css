@@ -12,6 +12,9 @@
   color: var(--primary);
 }
 
+.social-icons-mobile {
+  display: none;
+}
 
 @media only screen and (max-width: 760px) {
   .social-icons {

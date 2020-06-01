@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
+// import HonorableMentions from './components/HonorableMentions';
 import MobileNavbar from './components/MobileNavbar';
 import useWindowDimensions from './components/useWindowDimensions';
 import { ThemeProvider } from "styled-components";
@@ -28,7 +29,8 @@ function App() {
   }
 
   useEffect(() => {
-    localStorage.getItem('theme') ? setTheme(theme) : localStorage.setItem('theme', 'dark');
+    const theme = localStorage.getItem('theme');
+    theme ? setTheme(theme) : localStorage.setItem('theme', 'dark');
   }, []);
 
 
@@ -58,6 +60,11 @@ function App() {
             <h1><span className='monospace'>03.</span>Where I've Worked</h1>
             <MyWork />
           </section>
+          {/* <section>
+            <div className='custom-anchor' id='honorable-mentions'>.</div>
+            <h1><span className='monospace'>04.</span>Honorable Mentions</h1>
+            <HonorableMentions />
+          </section> */}
           <section id='contact-section'>
             <div className='custom-anchor' id='contact'>.</div>
             <h1><span className='monospace'>04. Now What?</span><br></br></h1>
@@ -92,7 +99,7 @@ function App() {
           <br></br>
         </div>
       </>
-    </ThemeProvider>
+    </ThemeProvider >
   );
 }
 
