@@ -16,16 +16,6 @@ export default function MobileNavbar({ themeToggler }) {
     })
   }, [])
 
-  const [isOpen, setIsOpen] = useState(false)
-
-  useEffect(() => {
-    if (isOpen === true) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = 'unset'
-    }
-  }, [isOpen])
-
   return (
     <div style={style} className='mobile-navbar'>
       <ToggleSwitch themeToggler={themeToggler} />
@@ -51,6 +41,9 @@ export default function MobileNavbar({ themeToggler }) {
           </a>
         </li>
       </ul>
+      <a href='https://www.google.com' target='_blank' rel='noopener nonreferrer'>
+        <button className='primary-button'>Resume</button>
+      </a>
     </div>
   )
 }

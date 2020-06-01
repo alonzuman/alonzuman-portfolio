@@ -7,7 +7,7 @@ export const lightTheme = {
   toggleBorder: 'black',
   paragraph: '#414142',
   background: '#f4f4f4',
-  selected: '#e1e1e1',
+  selected: '#f4f4f4',
   dark,
   primary
 }

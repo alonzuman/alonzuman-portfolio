@@ -15,10 +15,11 @@ export const GlobalStyles = createGlobalStyle`
   
   p {
     color: ${({ theme }) => theme.paragraph};
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .primary-button {
+    font-size: 1rem;
     border: 1px solid ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.primary};
   }
