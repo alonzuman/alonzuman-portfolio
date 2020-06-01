@@ -71,28 +71,6 @@ function App() {
             <Contact />
           </section>
           <footer>
-            <ul className='social-icons-mobile'>
-              <li className='social-icon'>
-                <a href='https://github.com/alonzuman' rel="noopener noreferrer" target='_blank'>
-                  <i className="fab fa-github" />
-                </a>
-              </li>
-              <li className='social-icon'>
-                <a href='https://facebook.com/alonzuman' rel="noopener noreferrer" target='_blank'>
-                  <i className="fab fa-facebook-f" />
-                </a>
-              </li>
-              <li className='social-icon'>
-                <a href='https://www.linkedin.com/in/alon-zuman-018365193/' rel="noopener noreferrer" target='_blank'>
-                  <i className="fab fa-linkedin-in" />
-                </a>
-              </li>
-              <li className='social-icon'>
-                <a href='https://instagram.com/alonzuman' rel="noopener noreferrer" target='_blank'>
-                  <i className="fab fa-instagram" />
-                </a>
-              </li>
-            </ul>
             <a className='bottom-email' href='mailto:alonzuman7@gmail.com'><div className='monospace'>alonzuman7@gmail.com</div></a>
             <span className='monospace'>Designed & Built by Alon Zuman</span>
           </footer>

@@ -4,12 +4,18 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     transition: all 0.50s ease-in-out;
+    font-family:  Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
   }
   
   .project-description, .navbar {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     transition: all 0.50s ease-in-out;
+  }
+  
+  p {
+    color: ${({ theme }) => theme.paragraph};
+    font-weight: 600;
   }
 
   .primary-button {
@@ -122,5 +128,7 @@ export const GlobalStyles = createGlobalStyle`
   
   .selected-tab {
     border-bottom: 2px solid ${({ theme }) => theme.primary};
+    background-color: ${({ theme }) => theme.selected};
+    color: ${({ theme }) => theme.primary};
   }
   ` 

@@ -23,6 +23,12 @@
 
   .social-icons-mobile {
     display: flex;
+    margin: 0.5rem 0;
     justify-content: space-around;
+  }
+
+  .social-icon-mobile {
+    font-size: 1.5rem;
+    padding: 0 1rem;
   }
 }

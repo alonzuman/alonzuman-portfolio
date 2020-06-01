@@ -29,28 +29,26 @@ export default function MobileNavbar({ themeToggler }) {
   return (
     <div style={style} className='mobile-navbar'>
       <ToggleSwitch themeToggler={themeToggler} />
-      <a className='fas fa-bars icon' onClick={() => setIsOpen(!isOpen)}></a>
-      {isOpen && <MobileMenu setIsOpen={setIsOpen} />}
-    </div>
-  )
-}
-
-const MobileMenu = ({ setIsOpen }) => {
-  return (
-    <div className='mobile-menu-container'>
-      <a className='fas fa-times exit-button' onClick={() => setIsOpen(false)} />
-      <ul className='mobile-menu'>
-        <li>
-          <a href='#about'>About</a>
+      <ul className='social-icons-mobile'>
+        <li className='social-icon-mobile'>
+          <a href='https://github.com/alonzuman' rel="noopener noreferrer" target='_blank'>
+            <i className="fab fa-github" />
+          </a>
         </li>
-        <li>
-          <a href='#experience'>Experience</a>
+        <li className='social-icon-mobile'>
+          <a href='https://facebook.com/alonzuman' rel="noopener noreferrer" target='_blank'>
+            <i className="fab fa-facebook-f" />
+          </a>
         </li>
-        <li>
-          <a href='#work'>Work</a>
+        <li className='social-icon-mobile'>
+          <a href='https://www.linkedin.com/in/alon-zuman-018365193/' rel="noopener noreferrer" target='_blank'>
+            <i className="fab fa-linkedin-in" />
+          </a>
         </li>
-        <li>
-          <a href='#contact'>Contact</a>
+        <li className='social-icon-mobile'>
+          <a href='https://instagram.com/alonzuman' rel="noopener noreferrer" target='_blank'>
+            <i className="fab fa-instagram" />
+          </a>
         </li>
       </ul>
     </div>

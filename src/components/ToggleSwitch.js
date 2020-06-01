@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ToggleSwitch.css';
 
 export default function ToggleSwitch({ themeToggler }) {
   const [isClicked, setIsClicked] = useState(false);
+
+  useEffect(() => {
+    const theme = localStorage.getItem('theme');
+    (theme === 'dark') ? setIsClicked(false) : setIsClicked(true);
+  }, [])
 
   const toggle = () => {
     setIsClicked(!isClicked);

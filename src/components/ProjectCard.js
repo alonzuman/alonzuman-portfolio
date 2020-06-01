@@ -19,7 +19,9 @@ export default function ProjectCard({ project }) {
         <img src={sample} className='project-photo' alt={project.title} />
         <div className='project-description' style={{ textAlign: 'left', direction: 'ltr' }}>
           <h3>Featured</h3><h1>{project.title}</h1>
-          {project.description}
+          <p>
+            {project.description}
+          </p>
           <div className='tech-stack'>
             {project.stack.map(x => <span key={x} className='monospace'> {x} </span>)}
           </div>
