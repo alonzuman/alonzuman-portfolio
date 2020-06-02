@@ -25,6 +25,7 @@
 .fa-moon, .fa-sun {
   margin-left: 0.4rem;
   position: absolute;
+  color: white!important;
   margin-top: 0.25rem;
 }
 
