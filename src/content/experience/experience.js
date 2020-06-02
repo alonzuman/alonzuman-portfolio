@@ -68,13 +68,13 @@ export const experience = {
           'Participated in all aspects of business development: market research, finance, operations and marketing; scaled our MVP to over 500 transactions (5k+ members in our community) over the period of 3 months.',
           'Designed UX & UI and developed front-end using HTML, CSS, Javascript & React.',
         ],
-        link: 'https://barbiz.shop',
+        link: 'https://leesa.rentals',
         image: leesa,
       },
       {
         id: 6,
         dates: 'August 2018 - December 2018',
-        role: 'Co-Founder & Web developer',
+        role: 'Web developer & Project manager',
         company: 'Zuman Jewelry',
         description: 'Peer to peer rental marketplace startup.',
         bullets: [
