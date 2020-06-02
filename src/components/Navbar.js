@@ -33,7 +33,7 @@ export default function Navbar({ themeToggler }) {
           <a href='#contact'><span className='monospace'>04.</span>Contact</a>
         </li>
         <li>
-          <a href='https://google.com' target='_href'><button className='primary-button'>Resume</button></a>
+          <a href='https://drive.google.com/file/d/19W3cYLjxxng43ZV6iE42lzowuXts522L/view?usp=sharing' target='_href'><button className='primary-button'>Resume</button></a>
         </li>
       </ul>
     </div>

@@ -17,7 +17,7 @@ export default function ProjectCard({ project }) {
       <div className='description-and-photo'>
         <img src={project.image} className='project-photo' alt={project.title} />
         <div className='project-description' style={{ textAlign: 'left', direction: 'ltr' }}>
-          <h3>Featured</h3><h1>{project.title}</h1>
+          <h3>Featured project</h3><h1>{project.title}</h1>
           <p>
             {project.description}
           </p>
