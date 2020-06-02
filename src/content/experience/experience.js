@@ -67,7 +67,7 @@ export const experience = {
         description: 'Peer to peer rental marketplace startup.',
         bullets: [
           'Participated in all aspects of business development: market research, finance, operations and marketing; scaled our MVP to over 500 transactions (5k+ members in our community) over the period of 3 months.',
-          'Designed UX & UI and developed front-end using HTML, CSS, Javascript & React.',
+          'Designed UX & UI and developed front-end using HTML, CSS, Javascript, React & Redux.',
         ],
         link: 'https://leesa.rentals',
         image: leesa,
