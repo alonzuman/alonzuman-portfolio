@@ -57,7 +57,7 @@ function App() {
           </section>
           <section >
             <div className='custom-anchor' id='work'>.</div>
-            <h1><span className='monospace'>03.</span>Some Work I've Done</h1>
+            <h1><span className='monospace'>03.</span>Work I've Done</h1>
             <MyWork />
           </section>
           {/* <section>

@@ -61,7 +61,7 @@ export const experience = {
       },
       {
         id: 5,
-        dates: 'August 2019 - December 2020',
+        dates: 'August 2019 - December 2019',
         role: 'Co-Founder & Web developer',
         company: 'Leesa',
         description: 'Peer to peer rental marketplace startup.',
