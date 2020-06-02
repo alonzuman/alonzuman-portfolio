@@ -1,4 +1,5 @@
 import React from 'react';
+import sample from '../content/sample.jpg';
 import './About.css';
 
 export default function About() {
@@ -7,7 +8,7 @@ export default function About() {
   return (
     <div className='about-container'>
       <a href='https://www.github.com/alonzuman' rel='noopener noreferrer' target='_blank'>
-        <img alt='me' src='https://avatars3.githubusercontent.com/u/57261095?s=460&u=e72013c26047bf55f8c3ea0c1b9b2b075feae9a1&v=4' className='about-photo' />
+        <img alt='me' src={sample} className='about-photo' />
       </a>
       <div className='about-content'>
         <p>I’m Alon, a web developer based in Tel Aviv, IL. I’m a well-organized person, problem solver, independent and have extremely high attention to details.</p>
