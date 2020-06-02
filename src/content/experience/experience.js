@@ -1,4 +1,5 @@
 import leesa from './images/leesa.PNG';
+import crank from './images/crank.jpg';
 import pytagoras from './images/pytagoras.jpg';
 import barbiz from './images/barbiz.PNG';
 import zumanjewelry from './images/zumanjewelry.PNG';
@@ -29,7 +30,7 @@ export const experience = {
         myRole: 'Web developer',
         repo: 'https://github.com/alonzuman/crank',
         link: 'http://crankify.herokuapp.com/',
-        image: '',
+        image: crank,
       },
       {
         id: 3,
