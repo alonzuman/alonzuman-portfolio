@@ -41,7 +41,7 @@ export default function MobileNavbar({ themeToggler }) {
           </a>
         </li>
       </ul>
-      <a href='https://www.google.com' target='_blank' rel='noopener nonreferrer'>
+      <a href='https://www.google.com' target='_blank' rel='noopener noreferrer'>
         <button className='primary-button'>Resume</button>
       </a>
     </div>

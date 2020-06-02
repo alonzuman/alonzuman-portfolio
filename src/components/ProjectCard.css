@@ -19,7 +19,9 @@
 
 .project-photo {
   min-width: 300px;
-  object-fit: cover;
+  height: 300px;
+  opacity: 0.2;
+  object-fit: contain;
 }
 
 .description-and-photo {

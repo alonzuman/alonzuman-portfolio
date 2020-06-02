@@ -6,7 +6,7 @@ export default function About() {
 
   return (
     <div className='about-container'>
-      <a href='https://www.github.com/alonzuman' rel='noopener nonreferrer' target='_blank'>
+      <a href='https://www.github.com/alonzuman' rel='noopener noreferrer' target='_blank'>
         <img alt='me' src='https://avatars3.githubusercontent.com/u/57261095?s=460&u=e72013c26047bf55f8c3ea0c1b9b2b075feae9a1&v=4' className='about-photo' />
       </a>
       <div className='about-content'>

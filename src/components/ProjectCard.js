@@ -1,6 +1,5 @@
 import React from 'react';
 import './ProjectCard.css';
-import sample from '../content/sample.jpg';
 
 export default function ProjectCard({ project }) {
   const right = {
@@ -16,7 +15,7 @@ export default function ProjectCard({ project }) {
   return (
     <li className='card-container' style={(project.id % 2 === 0 ? right : left)}>
       <div className='description-and-photo'>
-        <img src={sample} className='project-photo' alt={project.title} />
+        <img src={project.image} className='project-photo' alt={project.title} />
         <div className='project-description' style={{ textAlign: 'left', direction: 'ltr' }}>
           <h3>Featured</h3><h1>{project.title}</h1>
           <p>

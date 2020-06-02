@@ -1,0 +1,12 @@
+.work-card {
+
+}
+
+.work-bullets {
+  padding: 0 1rem;
+}
+
+.work-bullets li {
+  list-style: square;
+  margin-bottom: 0.5rem;
+}
