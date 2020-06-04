@@ -2,6 +2,7 @@
   text-align: center;
   padding: 2rem 0 6rem 0;
   min-height: 500px;
+  margin-bottom: 60px;
 }
 
 .contact-container h1 {
@@ -10,4 +11,13 @@
 
 .contact-container button {
   margin-top: 3rem;
+}
+
+@media only screen and (max-width: 760px) {
+  .contact-container {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
 }

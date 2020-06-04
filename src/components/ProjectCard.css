@@ -20,8 +20,9 @@
 .project-photo {
   min-width: 300px;
   height: 350px;
-  opacity: 0.2;
+  opacity: 0.8;
   object-fit: contain;
+  z-index: -1;
 }
 
 .description-and-photo {
@@ -32,38 +33,41 @@
 .tech-stack {
   position: absolute;
   bottom: 3rem;
+  right: 1rem;
+  left: 1rem;
 }
 
 .project-links {
   position: absolute;
   bottom: 1rem;
 }
+
+@media only screen and (max-width: 760px) {
+  .card-container {
+    padding: 1rem;
+    position: relative;
+    min-height: 400px;
+    margin-bottom: 4rem;
+  }
   
-  @media only screen and (max-width: 760px) {
-    .card-container {
-      padding: 1rem;
-      position: relative;
-      min-height: 400px;
-      margin-bottom: 4rem;
-    }
-    
+  .description-and-photo img {
+    opacity: 0.1;
+  }
+  
     .tech-stack {
       position: absolute;
       bottom: 4rem;
     }
-    .project-description {
+    
+  .project-description {
     position: absolute;
+    background-color: transparent!important;
     width: 100%;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-    opacity: 0.7;
     margin: 0;
-  }
-
-  .project-description:hover {
-    opacity: 1;
   }
 
   .project-photo {

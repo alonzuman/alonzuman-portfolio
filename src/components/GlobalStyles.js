@@ -7,17 +7,12 @@ export const GlobalStyles = createGlobalStyle`
     font-family:  Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
   }
   
-  .project-description, .navbar {
-    background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text};
-    transition: all 0.50s ease-in-out;
-  }
   
   p {
     color: ${({ theme }) => theme.paragraph};
     font-weight: 500;
   }
-
+  
   .primary-button {
     font-size: 1rem;
     border: 1px solid ${({ theme }) => theme.primary};
@@ -71,7 +66,7 @@ export const GlobalStyles = createGlobalStyle`
   .nav-item:hover {
     color: ${({ theme }) => theme.primary};
   }
-
+  
   .email-address {
     color: ${({ theme }) => theme.text}!important;
     font-size: 1.4rem;
@@ -88,18 +83,18 @@ export const GlobalStyles = createGlobalStyle`
   .about-photo {
     opacity: 0.8;
   }
-
+  
   .about-photo:hover {
     object-fit: cover;
     opacity: 1;
   }
-
+  
   .about-photo-background {
     background-color: #a24d69;
     width: 300px;
     height: 300px;
   }
-
+  
   .fa-moon:hover {
     color: ${({ theme }) => theme.text};
   }
@@ -107,7 +102,7 @@ export const GlobalStyles = createGlobalStyle`
   .fa-sun:hover {
     color: ${({ theme }) => theme.text};
   }
-
+  
   .mobile-menu-container {
     background-color: ${({ theme }) => theme.body};
   }
@@ -131,5 +126,13 @@ export const GlobalStyles = createGlobalStyle`
     border-bottom: 2px solid ${({ theme }) => theme.primary};
     background-color: ${({ theme }) => theme.selected};
     color: ${({ theme }) => theme.primary};
+  }
+  
+  @media only screen and (min-width: 760px) {
+    .project-description, .navbar {
+      background: ${({ theme }) => theme.body};
+      color: ${({ theme }) => theme.text};
+      transition: all 0.50s ease-in-out;
+    }
   }
   ` 

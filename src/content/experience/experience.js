@@ -29,7 +29,7 @@ export const experience = {
         stack: ['Ruby on Rails', 'Javascript', 'HTML', 'scss', 'PostgreSQL'],
         myRole: 'Web developer',
         repo: 'https://github.com/alonzuman/crank',
-        link: 'http://crankify.herokuapp.com/',
+        link: 'https://www.crank.rocks',
         image: crank,
       },
       {

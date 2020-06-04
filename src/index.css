@@ -53,11 +53,8 @@ button:focus {
 
 section {
   width: 100%;
-  min-height: 90vh;
-}
-
-#hero {
-  margin-top: 3rem;
+  min-height: 70vh;
+  height: 100%;
 }
 
 .custom-anchor {
@@ -97,5 +94,12 @@ button a {
 
   .bottom-email {
     display: block;
+  }
+}
+
+
+@media only screen and (min-width: 1400px) {
+  section {
+    min-height: 80vh;
   }
 }

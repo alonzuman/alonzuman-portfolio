@@ -1,6 +1,9 @@
-.hero-container {
+#hero {
   height: 100vh;
-  padding: 110px 0;
+}
+
+.hero-container {
+  padding: 180px 0;
 }
 
 .hero-container h1 {
@@ -22,12 +25,12 @@
   }
 
   .hero-container h1 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 }
 
 @media only screen and (min-width: 1400px) {
   .hero-container {
-    padding: 220px 0;
+    padding: 200px 0;
   }
 }

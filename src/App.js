@@ -60,11 +60,6 @@ function App() {
             <h1><span className='monospace'>03.</span>Work I've Done</h1>
             <MyWork />
           </section>
-          {/* <section>
-            <div className='custom-anchor' id='honorable-mentions'>.</div>
-            <h1><span className='monospace'>04.</span>Honorable Mentions</h1>
-            <HonorableMentions />
-          </section> */}
           <section id='contact-section'>
             <div className='custom-anchor' id='contact'>.</div>
             <h1><span className='monospace'>04. Now What?</span><br></br></h1>
