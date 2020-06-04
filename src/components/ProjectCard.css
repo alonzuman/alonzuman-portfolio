@@ -20,7 +20,7 @@
 .project-photo {
   min-width: 300px;
   height: 350px;
-  opacity: 0.8;
+  opacity: 0.4;
   object-fit: contain;
   z-index: -1;
 }

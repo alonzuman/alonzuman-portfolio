@@ -47,7 +47,8 @@ button:focus {
 
 .container {
   margin: 6rem 8rem 2rem 8rem;
-  max-width: 700px;
+  padding: 0 5rem;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -94,6 +95,10 @@ button a {
 
   .bottom-email {
     display: block;
+  }
+
+  .container {
+    max-width: 600px;
   }
 }
 
