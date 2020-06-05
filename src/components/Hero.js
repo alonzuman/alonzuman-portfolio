@@ -7,6 +7,7 @@ export default function Hero() {
       <h3>Hello! <span role='img' aria-label='wave-emoji'>👋</span></h3>
       <h1>I'm <b>Alon Zuman</b>,<br></br> a design-minded full-stack developer passionate about building beautiful experiences for <b>people</b> to enjoy.</h1>
       <a href='mailto:alonzuman7@gmail.com'>
+        <h1>A test</h1>
         <button className='primary-button' >Contact Me</button>
       </a>
     </div>
