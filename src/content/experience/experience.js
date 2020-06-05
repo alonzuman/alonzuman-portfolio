@@ -1,4 +1,5 @@
 import leesa from './images/leesa.PNG';
+import visualizer from './images/github-visualizer.png';
 import crank from './images/crank.jpg';
 import pytagoras from './images/pytagoras.jpg';
 import barbiz from './images/barbiz.PNG';
@@ -12,6 +13,18 @@ export const experience = {
     stuffThatIBuilt: [
       {
         id: 1,
+        dates: 'June 2020',
+        inProgress: true,
+        title: 'Github Visualizer',
+        description: 'A friendly way of looking at your github profile and repositories statistics. Visualizes the data of your common github actions, languages and more.',
+        stack: ['React', 'Chart.js', 'Github API', 'Netlify'],
+        myRole: 'Web developer',
+        repo: 'https://github.com/alonzuman/github-visualizer',
+        link: 'https://5edaa613ccbb61000a6a27f6--nervous-spence-81f07c.netlify.app/',
+        image: visualizer,
+      },
+      {
+        id: 2,
         dates: 'May 2020',
         title: 'Pytagoras',
         description: 'Hebrew U Hackathon project; A search engine that enables students to filter video lectures by tagging their timestamps.',
@@ -22,7 +35,7 @@ export const experience = {
         image: pytagoras,
       },
       {
-        id: 2,
+        id: 3,
         dates: 'April 2020',
         title: 'Crank',
         description: 'User generated content platform for teaching and challenging each other with unusual skills.',
@@ -33,7 +46,7 @@ export const experience = {
         image: crank,
       },
       {
-        id: 3,
+        id: 4,
         dates: 'March 2020',
         title: 'Camerent',
         description: 'Peer to peer rental marketplace that enables photographers rent their professional equipment to each other.',
@@ -46,7 +59,7 @@ export const experience = {
     ],
     workExperience: [
       {
-        id: 4,
+        id: 5,
         dates: 'December 2019 - Present',
         role: 'Web developer & Project manager',
         company: 'Barbiz',
@@ -60,7 +73,7 @@ export const experience = {
         image: barbiz,
       },
       {
-        id: 5,
+        id: 6,
         dates: 'August 2019 - December 2019',
         role: 'Co-Founder & Web developer',
         company: 'Leesa',
@@ -73,7 +86,7 @@ export const experience = {
         image: leesa,
       },
       {
-        id: 6,
+        id: 7,
         dates: 'August 2018 - December 2018',
         role: 'Web developer & Project manager',
         company: 'Zuman Jewelry',
