@@ -4,6 +4,7 @@
   flex-direction: column;
 }
 
+
 .about-photo {
   object-fit: cover;
   width: 10rem;
